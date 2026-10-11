@@ -4,6 +4,12 @@
 
 This repository contains a working Anchor program, an English React application, a private receipt service, a disposable localnet demo and a Phantom wallet flow for devnet. The student, sponsor and reviewer have separate workspaces. A reserved budget is not an approved reimbursement or an advance payment.
 
+**Project website:** [saylool.github.io/tripgrant](https://saylool.github.io/tripgrant/). This public page includes real app screenshots, a settlement illustration, English videos and validation evidence. The complete application runs locally with the instructions below; the public showcase does not accept funds or private receipt uploads. Public devnet deployment remains pending.
+
+**Colosseum project draft:** [TripGrant](https://colosseum.com/arena/projects/tripgrant). Creating the project draft is separate from completing the final hackathon submission.
+
+The prepared [pitch](https://saylool.github.io/tripgrant/videos/pitch.mp4) is 1:45 and the [demo walkthrough](https://saylool.github.io/tripgrant/videos/demo.mp4) is 2:13. They use synthetic English narration over actual screen captures. Colosseum requires final video links on YouTube, Loom or Vimeo, and the team should review the founder introduction and live-product demonstration requirements before submitting. Captions and provenance are in `showcase/videos`.
+
 ## Run the working demo
 
 Requirements: Node.js 26+, npm, Rust/Cargo and Python 3. The setup script supports macOS Apple Silicon, macOS Intel and Linux x86-64. The build was verified on macOS Apple Silicon.

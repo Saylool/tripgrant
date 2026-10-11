@@ -28,7 +28,7 @@ Solana, Rust, Anchor, classic SPL Token, React, TypeScript, Vite, Express, SQLit
 
 ## Current progress
 
-The working MVP includes sponsor, student and reviewer workspaces, private receipt upload/download, settlement confirmations, sponsor refunds and transaction verification. Forty-eight automated test cases passed, including 17 checks against the deployed program and a separate USDC-only binary whitelist/rollback check. The production web build was exercised on desktop and a 390px mobile viewport. A real localnet flow reserved 100 TEST, paid 72 and returned 28. Data and balances are synthetic. Public devnet and application hosting are pending; no external pilot or adoption evidence has been established for this submission.
+The working MVP includes sponsor, student and reviewer workspaces, private receipt handling, atomic settlement and refunds. Forty-eight test cases passed, including 17 against the deployed program and a USDC-only whitelist/rollback check. The web build was checked on desktop and mobile. A real localnet flow reserved 100 TEST, paid 72 and returned 28. Synthetic data, videos and evidence are available on the public project website; the complete app runs from the public repository. Public devnet and full application hosting are pending. No external pilot or adoption is claimed.
 
 ## Proposed business model
 
@@ -40,14 +40,14 @@ This TripGrant implementation was created in this workspace on 11 October 2026, 
 
 ## Links to fill after publication
 
-| Field                  | Current state                                                     |
-| ---------------------- | ----------------------------------------------------------------- |
-| GitHub repository      | Not published; owner account supplied: https://github.com/Saylool |
-| Public project website | Not published; localhost is not the submission URL                |
-| Project X link         | Applicant to provide                                              |
-| English pitch video    | Script ready in PITCH.md; recording/link pending                  |
-| English demo video     | Script ready in DEMO_SCRIPT.md; recording/link pending            |
-| Colosseum project link | Created after the applicant registers and saves the project       |
+| Field                  | Current state                                                                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| GitHub repository      | https://github.com/Saylool/tripgrant                                                                                           |
+| Public project website | https://saylool.github.io/tripgrant/ — screenshots, videos and evidence; full escrow app runs from source                      |
+| Project X link         | Applicant to provide                                                                                                           |
+| English pitch video    | Prepared 1:45 video at https://saylool.github.io/tripgrant/videos/pitch.mp4; final YouTube/Loom/Vimeo link pending             |
+| English demo video     | Prepared 2:13 screen walkthrough at https://saylool.github.io/tripgrant/videos/demo.mp4; final YouTube/Loom/Vimeo link pending |
+| Colosseum project link | https://colosseum.com/arena/projects/tripgrant — draft created, final submission pending                                       |
 
 Only answer the Earn question about an official Colosseum submission with **Yes** after the main submission has actually completed. Use the same project name and verified links in all three submissions.
 

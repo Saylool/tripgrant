@@ -20,6 +20,12 @@ Son tarihler için kaynaklar: [ana yarışmanın resmî kuralları](https://colo
 
 ## Hazır dosyalar
 
+11 Ekim'deki teslim hazırlığında [kaynak deposu](https://github.com/Saylool/tripgrant) ve [jüriye açık proje sayfası](https://saylool.github.io/tripgrant/) yayımlandı. [Colosseum TripGrant taslağı](https://colosseum.com/arena/projects/tripgrant) da oluşturuldu. Bunların oluşturulması **nihai başvurunun gönderildiği anlamına gelmiyor**.
+
+İngilizce [pitch videosu](https://saylool.github.io/tripgrant/videos/pitch.mp4) 1:45, [demo anlatımı](https://saylool.github.io/tripgrant/videos/demo.mp4) 2:13. Gerçek uygulama ekranları üzerinde sentetik İngilizce anlatım var; sürekli ekran kaydı veya başvuru sahibinin kendi sesi değildir. Colosseum'un canlı formu videolar için **YouTube, Loom veya Vimeo** istiyor. Pitch alanı takımın kendisini tanıtmasını; demo alanı çalışan ürünün gösterilmesini istiyor. Bu iki gerekliliğe uygun son sürümler yüklenip platform bağlantıları kullanılmalı; doğrudan MP4 bağlantıları o iki alana konmamalı.
+
+Ana formda accelerator başvurusu ayrıca seçilen, isteğe bağlı bir bölüm olarak görünüyor; şu an seçilmedi. Kişisel başvuru profili, Telegram iletişimi ve Earn'ün zorunlu X alanı kullanıcıdan gelecek bilgilerle tamamlanmalı.
+
 - [README](../README.md): ürün, kurulum, devnet geçişi ve sınırlar.
 - [İngilizce pitch](PITCH.md): yaklaşık iki dakikalık sunum metni.
 - [İngilizce demo anlatımı](DEMO_SCRIPT.md): uygulama üzerinde kaydedilecek demo akışı.
@@ -36,4 +42,4 @@ Son tarihler için kaynaklar: [ana yarışmanın resmî kuralları](https://colo
 5. Başvuruda üniversite kaydını ve kendi profil bilgilerini kullan. Demo öğrencisi Ada Y. temsili bir kişidir. Gerçek görüşme, pilot veya ortaklık yapılmadan bunlar varmış gibi yazma.
 6. [Ana hackathon](https://colosseum.com/worldsfair), [Türkiye Local Track](https://superteam.fun/earn/listing/submit-crypto-worlds-fair-project-for-turkish-builders/) ve [Arf University Track](https://superteam.fun/earn/listing/arf-superteam-turkiye-university-track/) teslimlerini araştırma raporundaki akışa göre tamamla. Güncel koşullar ve son tarihler için doğrudan ilanları kullan; bütün formlarda aynı proje adı ve çalışan bağlantılar yer alsın.
 
-Yarışma araştırması ve kaynakları [proje seçimi raporunda](../PROJE_FIKRI_ARASTIRMASI.md), Türkiye organizasyon rehberi ise [Superteam Türkiye sayfasında](https://tr.superteam.fun/colosseum). Bu oturumda hesap açılmadı, form gönderilmedi veya başvuru yapılmadı.
+Yarışma araştırması ve kaynakları [proje seçimi raporunda](../PROJE_FIKRI_ARASTIRMASI.md), Türkiye organizasyon rehberi ise [Superteam Türkiye sayfasında](https://tr.superteam.fun/colosseum). Başvuru sahibi iki platforma kendi giriş yaptı; Colosseum profili ve proje taslağı kaydedildi. Ana yarışmaya veya Earn'deki iki yarışma ilanına nihai proje başvurusu henüz gönderilmedi.
