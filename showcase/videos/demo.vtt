@@ -1,0 +1,94 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.588
+This is TripGrant, a student travel reimbursement application with sponsor, student and reviewer workspaces.
+
+00:00:06.588 --> 00:00:10.675
+The screens in this walkthrough come from the working application.
+
+00:00:10.675 --> 00:00:13.237
+Events, names and receipts are synthetic.
+
+00:00:13.237 --> 00:00:16.958
+Disposable test tokens run on a real local Solana validator.
+
+00:00:17.158 --> 00:00:25.757
+The sponsor creates a travel grant for a fixed student and reviewer, with a budget of one hundred test units and separate claim and review deadlines.
+
+00:00:25.757 --> 00:00:29.566
+The program requires distinct participants and ordered deadlines.
+
+00:00:29.766 --> 00:00:33.802
+Before funding, the sponsor reviews the fixed wallets and deadlines.
+
+00:00:33.802 --> 00:00:37.542
+Funding creates the program controlled token vault atomically.
+
+00:00:37.542 --> 00:00:41.993
+The budget is reserved; no reimbursement has been paid to the student yet.
+
+00:00:42.193 --> 00:00:45.779
+The funded grant now appears in the workspace, ready to claim.
+
+00:00:45.779 --> 00:00:49.249
+Its state and remaining vault balance are read from Solana.
+
+00:00:49.249 --> 00:00:52.373
+The sponsor's budget is held for this specific grant.
+
+00:00:52.573 --> 00:00:58.914
+The student opens the grant and prepares a seventy two unit expense using an explicitly synthetic receipt.
+
+00:00:58.914 --> 00:01:01.008
+The original file stays off chain.
+
+00:01:01.008 --> 00:01:06.572
+Submission records the amount and the receipt's SHA two fifty six commitment in the program.
+
+00:01:06.772 --> 00:01:08.263
+The grant is now in review.
+
+00:01:08.263 --> 00:01:10.360
+The receipt's fingerprint is visible.
+
+00:01:10.360 --> 00:01:14.004
+The original receipt can be downloaded by the grant participants.
+
+00:01:14.004 --> 00:01:18.751
+The server and browser check that the downloaded bytes match the on chain commitment.
+
+00:01:18.951 --> 00:01:25.470
+The designated reviewer downloads the receipt and confirms the eligibility check for this synthetic demonstration.
+
+00:01:25.470 --> 00:01:28.557
+A matching hash does not prove an expense is genuine.
+
+00:01:28.557 --> 00:01:32.045
+A real grant requires human review of the original evidence.
+
+00:01:32.245 --> 00:01:37.837
+The settlement preview shows seventy two units to the student and twenty eight back to the sponsor.
+
+00:01:37.837 --> 00:01:41.226
+Approval executes both transfers in one Solana transaction.
+
+00:01:41.226 --> 00:01:44.898
+The approved amount cannot exceed the claim or the reserved cap.
+
+00:01:45.098 --> 00:01:46.154
+The grant is paid.
+
+00:01:46.154 --> 00:01:52.377
+Seventy two test units reached the student, twenty eight returned to the sponsor, and the vault is empty.
+
+00:01:52.377 --> 00:01:55.312
+This terminal grant cannot make a second payment.
+
+00:01:55.512 --> 00:02:01.903
+Here is the confirmed transaction, with its actual signature, slot, fee and program execution logs.
+
+00:02:01.903 --> 00:02:05.777
+This is localnet evidence, not a public devnet transaction.
+
+00:02:05.777 --> 00:02:12.490
+The repository includes the full application, program and setup instructions to reproduce the workflow.

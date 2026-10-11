@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TripGrant reserves student travel budgets on Solana and settles reimbursement and unused funds together. Explore the working localnet prototype."
+    />
+    <meta name="theme-color" content="#f66d38" />
+    <title>TripGrant — Ideas deserve a ticket.</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="header wrap">
+      <a class="brand" href="#home" aria-label="TripGrant home"
+        ><img
+          src="assets/favicon.svg"
+          alt=""
+          width="32"
+          height="32"
+        />tripgrant<span>.</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#workflow">How it works</a><a href="#product">The product</a
+        ><a href="#demo">Watch demo</a>
+      </nav>
+      <a class="small-link" href="https://github.com/Saylool/tripgrant"
+        >View code ↗</a
+      >
+    </header>
+    <main id="home">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="dot"></span> STUDENT TRAVEL · SOLANA ESCROW
+          </div>
+          <h1>Good ideas<br />shouldn’t <em>stay home.</em></h1>
+          <p class="lead">
+            Reserve a student’s travel budget. Review the expense. Pay what’s
+            approved and return what’s left — together.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#demo"
+              >Watch the working demo <span>↗</span></a
+            ><a class="button secondary" href="#workflow"
+              >Explore the workflow <span>↓</span></a
+            >
+          </div>
+          <p class="micro">
+            Working localnet prototype · English interface · AI-assisted
+            development
+          </p>
+        </div>
+        <div
+          class="ticket"
+          aria-label="Example settlement: reserve 100, pay 72, return 28"
+        >
+          <div class="ticket-top">
+            <span>ONE BUDGET. A CLEAR JOURNEY.</span
+            ><span class="plane">✈</span>
+          </div>
+          <div class="route">
+            <div><small>FROM</small><strong>Support</strong></div>
+            <span class="route-line"></span>
+            <div><small>TO</small><strong>Opportunity</strong></div>
+          </div>
+          <div class="ticket-budget">
+            <span>RESERVED BUDGET</span><strong>100<small> TEST</small></strong>
+          </div>
+          <div class="ticket-bottom">
+            <div>
+              <span>TO THE STUDENT</span><strong>72<small> TEST</small></strong>
+            </div>
+            <div>
+              <span>BACK TO SPONSOR</span
+              ><strong>28<small> TEST</small></strong>
+            </div>
+          </div>
+          <div class="ticket-note">
+            <span>✓</span> Both transfers. One Solana transaction.
+          </div>
+          <div class="barcode" aria-hidden="true"></div>
+          <small class="ticket-fine"
+            >Illustrative example · disposable tokens · no real money</small
+          >
+        </div>
+      </section>
+      <section class="status-strip wrap" aria-label="Prototype status">
+        <div>
+          <strong>3 roles</strong><span>Sponsor · Student · Reviewer</span>
+        </div>
+        <div>
+          <strong>48 checks passed</strong
+          ><span>Including real program execution</span>
+        </div>
+        <div>
+          <strong>Localnet verified</strong
+          ><span>Public devnet deployment pending</span>
+        </div>
+      </section>
+      <section class="section wrap" id="workflow">
+        <div class="section-heading">
+          <span class="eyebrow">FROM A BUDGET TO A JOURNEY</span>
+          <h2>One approval.<br />Everything accounted for.</h2>
+          <p>
+            For student communities, organizers and sponsors managing travel
+            reimbursements.
+          </p>
+        </div>
+        <div class="steps">
+          <article>
+            <span class="step">01</span>
+            <h3>Reserve</h3>
+            <p>
+              The sponsor funds a token vault for a fixed student and reviewer.
+              The cap and deadlines are fixed after funding.
+            </p>
+          </article>
+          <article>
+            <span class="step">02</span>
+            <h3>Review</h3>
+            <p>
+              The student submits an expense and an original receipt. A human
+              checks eligibility and the evidence.
+            </p>
+          </article>
+          <article>
+            <span class="step">03</span>
+            <h3>Pay & return</h3>
+            <p>
+              Solana pays the approved amount and returns the entire unused
+              balance to the sponsor in one transaction.
+            </p>
+          </article>
+        </div>
+        <div class="calculator">
+          <div>
+            <span class="eyebrow">TRY THE SETTLEMENT MATH</span>
+            <h3>Where does the budget go?</h3>
+            <p>
+              An interactive illustration. This control does not send a
+              transaction.
+            </p>
+          </div>
+          <div class="calculator-controls">
+            <label for="approval"
+              >Approved expense
+              <output id="approval-label" for="approval">72 TEST</output></label
+            ><input id="approval" type="range" min="0" max="100" value="72" />
+            <div class="split">
+              <div>
+                <span>Student receives</span
+                ><strong id="student-amount">72 TEST</strong>
+              </div>
+              <div>
+                <span>Sponsor receives</span
+                ><strong id="sponsor-amount">28 TEST</strong>
+              </div>
+            </div>
+            <p id="settlement-explanation" class="micro" aria-live="polite">
+              100 reserved = 72 paid + 28 returned.
+            </p>
+          </div>
+        </div>
+        <p class="boundary">
+          TripGrant reimburses an expense after it is incurred. The MVP does not
+          provide advance financing. Rejection returns the full balance; after
+          the review deadline, anyone can trigger a refund to the fixed sponsor.
+        </p>
+      </section>
+      <section class="product-section" id="product">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="eyebrow">BUILT, AND RUN ON SOLANA</span>
+            <h2>A workspace for each step.</h2>
+            <p>
+              Actual screens from the tested application. Events, names and
+              receipts are synthetic.
+            </p>
+          </div>
+          <div
+            class="preview-tabs"
+            role="tablist"
+            aria-label="Product screenshots"
+          >
+            <button
+              id="tab-sponsor"
+              role="tab"
+              aria-selected="true"
+              aria-controls="product-panel"
+              data-view="sponsor"
+            >
+              Sponsor</button
+            ><button
+              id="tab-student"
+              role="tab"
+              aria-selected="false"
+              aria-controls="product-panel"
+              data-view="student"
+              tabindex="-1"
+            >
+              Student</button
+            ><button
+              id="tab-reviewer"
+              role="tab"
+              aria-selected="false"
+              aria-controls="product-panel"
+              data-view="reviewer"
+              tabindex="-1"
+            >
+              Reviewer
+            </button>
+          </div>
+          <div
+            class="product-frame"
+            id="product-panel"
+            role="tabpanel"
+            aria-labelledby="tab-sponsor"
+          >
+            <div class="window-bar">
+              <span></span><span></span><span></span
+              ><small>TripGrant · actual localnet application screenshot</small>
+            </div>
+            <img
+              id="product-image"
+              src="assets/desktop.jpg"
+              alt="Sponsor workspace showing reserved grants, student payments and sponsor refunds."
+              width="1280"
+              height="720"
+              loading="lazy"
+            />
+          </div>
+          <p id="product-caption" class="preview-caption">
+            Sponsor: reserve individual travel budgets and see approved payouts
+            and returned funds.
+          </p>
+          <div class="feature-grid">
+            <article>
+              <span>01 / EVIDENCE</span>
+              <h3>Private originals.<br />Verifiable fingerprints.</h3>
+              <p>
+                The receipt stays off chain and is restricted to the grant
+                participants in the full app. Its SHA-256 commitment is on
+                Solana. A match proves the file matches; authenticity still
+                requires human review.
+              </p>
+            </article>
+            <article>
+              <span>02 / SETTLEMENT</span>
+              <h3>Fixed participants.<br />One final decision.</h3>
+              <p>
+                The program checks signers, token accounts, deadlines and caps.
+                A terminal grant cannot pay twice. The unused vault closes after
+                the refund.
+              </p>
+            </article>
+            <article>
+              <span>03 / VERIFICATION</span>
+              <h3>See the result.<br />Inspect the execution.</h3>
+              <p>
+                The full app reads grant state from the chain and displays
+                transaction signatures, slots, fees and program logs. The source
+                and validation evidence are available below.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section wrap" id="demo">
+        <div class="section-heading">
+          <span class="eyebrow">SEE THE PROTOTYPE</span>
+          <h2>A short pitch.<br />A real escrow walkthrough.</h2>
+          <p>
+            English synthetic narration over product screens. The demo uses
+            disposable TEST tokens on a local Solana validator.
+          </p>
+        </div>
+        <div class="video-grid">
+          <article>
+            <video
+              controls
+              preload="metadata"
+              poster="assets/desktop.jpg"
+              aria-label="TripGrant English pitch"
+            >
+              <source src="videos/pitch.mp4" type="video/mp4" />
+              <track
+                kind="captions"
+                src="videos/pitch.vtt"
+                srclang="en"
+                label="English"
+                default
+              />
+            </video>
+            <h3>The pitch</h3>
+            <p>
+              The problem, product, Solana implementation and next validation.
+            </p>
+            <a href="videos/pitch.mp4">Open pitch video ↗</a>
+          </article>
+          <article>
+            <video
+              controls
+              preload="metadata"
+              poster="assets/settlement.jpg"
+              aria-label="TripGrant English application demo"
+            >
+              <source src="videos/demo.mp4" type="video/mp4" />
+              <track
+                kind="captions"
+                src="videos/demo.vtt"
+                srclang="en"
+                label="English"
+                default
+              />
+            </video>
+            <h3>The working demo</h3>
+            <p>
+              Sponsor reserves 100. Student requests 72. Reviewer pays 72 and
+              returns 28.
+            </p>
+            <a href="videos/demo.mp4">Open demo video ↗</a>
+          </article>
+        </div>
+      </section>
+      <section class="proof-section wrap">
+        <div>
+          <span class="eyebrow">REVIEW THE IMPLEMENTATION</span>
+          <h2>From the screen<br />to the program.</h2>
+          <p>
+            Anchor escrow, React workspaces, private receipt service and a
+            reproducible localnet demo. Built during Crypto World’s Fair 2026
+            with Codex AI assistance.
+          </p>
+          <div class="proof-links">
+            <a
+              class="button primary"
+              href="https://github.com/Saylool/tripgrant"
+              >Source & setup ↗</a
+            ><a
+              class="button secondary"
+              href="https://github.com/Saylool/tripgrant/blob/main/docs/VALIDATION.md"
+              >Validation record ↗</a
+            ><a class="small-link" href="validation.json"
+              >Recorded transaction data ↗</a
+            >
+          </div>
+        </div>
+        <aside>
+          <strong>Current prototype status</strong>
+          <ul>
+            <li>Working localnet program and full web app.</li>
+            <li>Public page presents screenshots, videos and evidence.</li>
+            <li>Devnet-USDC build prepared; public deployment pending.</li>
+            <li>No external pilot or confirmed partner yet.</li>
+            <li>Upgradeable program; no independent security audit.</li>
+          </ul>
+          <p>
+            This public page does not accept funds or upload private receipts.
+            Clone the repository to run the complete workflow.
+          </p>
+        </aside>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <a class="brand" href="#home">tripgrant<span>.</span></a>
+      <p>Ideas deserve a ticket.</p>
+      <a href="https://colosseum.com/arena/projects/tripgrant"
+        >Colosseum project ↗</a
+      >
+    </footer>
+  </body>
+</html>

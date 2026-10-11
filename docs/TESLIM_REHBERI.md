@@ -4,6 +4,20 @@
 
 > Student travel grants on Solana: reserve a budget, review private expense evidence, then reimburse the approved amount and return unused funds atomically.
 
+## Hesaplar ve son tarihler
+
+11 Ekim 2026'da tekrar kontrol edildi. Önceki araştırmadaki University Track tarihi değişmiş; canlı ilan artık **15 Ekim 23:59** gösteriyor. Ana yarışma ve Türkiye Local Track daha erken kapandığı için üç teslimi de **12 Ekim akşamına** yetiştirmek hedefimiz.
+
+| Teslim                        | Türkiye saatiyle son tarih | Bağlantı                                                                                                  |
+| ----------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Ana Crypto World's Fair       | 13 Ekim 2026, 09:59        | [Colosseum kayıt/giriş](https://colosseum.com/arena/hackathon/register?entry=worldsfair)                  |
+| Superteam Türkiye Local Track | 13 Ekim 2026, 09:59        | [Local Track](https://superteam.fun/earn/listing/submit-crypto-worlds-fair-project-for-turkish-builders/) |
+| Arf University Track          | 15 Ekim 2026, 23:59        | [University Track](https://superteam.fun/earn/listing/arf-superteam-turkiye-university-track/)            |
+
+Başvuru sahibinin verdiği bilgiler: **Piri Reis Üniversitesi**, GitHub hesabı **[Saylool](https://github.com/Saylool)**. Ad-soyad, Telegram ve X bilgileri henüz bu taslağa eklenmedi. Colosseum ve Superteam Earn ayrı hesaplar; ülke bilgisi Colosseum'da **Turkey** olmalı.
+
+Son tarihler için kaynaklar: [ana yarışmanın resmî kuralları](https://colosseum.com/legal/Crypto%20World%27s%20Fair%20Hackathon%20Rules.pdf), yukarıdaki canlı Earn ilanları. Earn formundaki website ve X alanları University Track için zorunlu, Local Track için isteğe bağlı görünüyor. Dolayısıyla University başvurusu için gerçek, erişilebilir uygulama ve X bağlantıları gerekiyor; mevcut localhost adresi başvuru bağlantısı olarak kullanılmamalı.
+
 ## Hazır dosyalar
 
 - [README](../README.md): ürün, kurulum, devnet geçişi ve sınırlar.
@@ -11,6 +25,7 @@
 - [İngilizce demo anlatımı](DEMO_SCRIPT.md): uygulama üzerinde kaydedilecek demo akışı.
 - [Doğrulama kaydı](VALIDATION.md): 48 başarılı sınama ve gerçek yerel ağ işlemi.
 - [Türkçe kullanım](TURKCE_KULLANIM.md): üç rolü denemek için adımlar.
+- [İngilizce başvuru taslakları](BASVURU_METINLERI.md): form açıklamalarına kopyalanabilecek ürün metinleri.
 
 ## Teslimden önce tamamlanacaklar
 

@@ -1,0 +1,14 @@
+{
+  "pitch": {
+    "durationSeconds": 105.37,
+    "narration": "Synthetic speech, macOS Samantha; not the founder's voice.",
+    "visualMethod": "Screen-by-screen walkthrough using actual app captures; not a continuous screen recording.",
+    "segmentCount": 6
+  },
+  "demo": {
+    "durationSeconds": 132.69,
+    "narration": "Synthetic speech, macOS Samantha; not the founder's voice.",
+    "visualMethod": "Screen-by-screen walkthrough using actual app captures; not a continuous screen recording.",
+    "segmentCount": 10
+  }
+}

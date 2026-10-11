@@ -1,0 +1,73 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.583
+TripGrant is a solo project by Samet, a student at Piri Reis University, built with Codex A I assistance.
+
+00:00:06.583 --> 00:00:14.545
+It helps sponsors reserve student travel budgets on Solana, then reimburse approved expenses and return unused funds together.
+
+00:00:14.745 --> 00:00:21.562
+Travel reimbursement involves allocating a budget, checking evidence, paying the student and returning what is left.
+
+00:00:21.562 --> 00:00:26.322
+TripGrant gives each trip a fixed student, reviewer, spending cap and deadlines.
+
+00:00:26.322 --> 00:00:28.849
+The budget is reserved in an escrow vault.
+
+00:00:28.849 --> 00:00:34.491
+This version reimburses an expense after it is incurred; it does not provide advance financing.
+
+00:00:34.691 --> 00:00:37.853
+The student submits an expense and an original receipt.
+
+00:00:37.853 --> 00:00:43.257
+The file stays private to the grant participants, while its fingerprint is recorded on chain.
+
+00:00:43.257 --> 00:00:46.362
+A human reviewer checks eligibility and authenticity.
+
+00:00:46.362 --> 00:00:50.559
+A matching fingerprint only proves that the file matches the submission.
+
+00:00:50.759 --> 00:00:53.030
+One approval executes both transfers.
+
+00:00:53.030 --> 00:01:01.069
+In this example, one hundred test units are reserved, seventy two are paid to the student, and twenty eight return to the sponsor.
+
+00:01:01.069 --> 00:01:02.787
+The grant cannot pay twice.
+
+00:01:02.787 --> 00:01:09.660
+Rejection returns the full budget; after the review deadline, anyone can trigger a refund to the fixed sponsor.
+
+00:01:09.860 --> 00:01:12.404
+Solana is central to the implementation.
+
+00:01:12.404 --> 00:01:18.828
+The Anchor program enforces signer checks, account ownership, caps, deadlines and atomic settlement.
+
+00:01:18.828 --> 00:01:20.545
+Forty eight checks passed.
+
+00:01:20.545 --> 00:01:26.397
+This is a working local validator prototype with synthetic data and disposable test tokens.
+
+00:01:26.397 --> 00:01:29.132
+Public devnet deployment is still pending.
+
+00:01:29.332 --> 00:01:33.247
+The first audience is student communities and small event sponsors.
+
+00:01:33.247 --> 00:01:40.492
+The next step is to test the workflow with three to five students and measure reimbursement time and unused funds returned.
+
+00:01:40.492 --> 00:01:43.121
+No pilot partnership or adoption is claimed.
+
+00:01:43.121 --> 00:01:43.764
+TripGrant.
+
+00:01:43.764 --> 00:01:45.166
+Ideas deserve a ticket.
