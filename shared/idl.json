@@ -1,0 +1,719 @@
+{
+  "address": "Ea1JSMwEmnHGG4BUWnzrEFVhkNrtif3919GbdnuaLhd3",
+  "metadata": {
+    "name": "tripgrant",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Single-settlement travel grant escrow"
+  },
+  "instructions": [
+    {
+      "name": "create_and_fund",
+      "discriminator": [
+        81,
+        241,
+        83,
+        179,
+        19,
+        203,
+        167,
+        64
+      ],
+      "accounts": [
+        {
+          "name": "sponsor",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "student"
+        },
+        {
+          "name": "reviewer"
+        },
+        {
+          "name": "mint"
+        },
+        {
+          "name": "grant",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "sponsor"
+              },
+              {
+                "kind": "arg",
+                "path": "grant_id"
+              }
+            ]
+          }
+        },
+        {
+          "name": "vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  118,
+                  97,
+                  117,
+                  108,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "grant"
+              }
+            ]
+          }
+        },
+        {
+          "name": "sponsor_token",
+          "writable": true
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "grant_id",
+          "type": "u64"
+        },
+        {
+          "name": "cap",
+          "type": "u64"
+        },
+        {
+          "name": "claim_deadline",
+          "type": "i64"
+        },
+        {
+          "name": "review_deadline",
+          "type": "i64"
+        },
+        {
+          "name": "event_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "expire_and_refund",
+      "discriminator": [
+        129,
+        130,
+        91,
+        224,
+        222,
+        230,
+        183,
+        134
+      ],
+      "accounts": [
+        {
+          "name": "caller",
+          "signer": true
+        },
+        {
+          "name": "grant",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "grant.sponsor",
+                "account": "Grant"
+              },
+              {
+                "kind": "account",
+                "path": "grant.grant_id",
+                "account": "Grant"
+              }
+            ]
+          }
+        },
+        {
+          "name": "sponsor",
+          "writable": true,
+          "relations": [
+            "grant"
+          ]
+        },
+        {
+          "name": "mint",
+          "relations": [
+            "grant"
+          ]
+        },
+        {
+          "name": "vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  118,
+                  97,
+                  117,
+                  108,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "grant"
+              }
+            ]
+          }
+        },
+        {
+          "name": "sponsor_token",
+          "writable": true
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "settle",
+      "discriminator": [
+        175,
+        42,
+        185,
+        87,
+        144,
+        131,
+        102,
+        212
+      ],
+      "accounts": [
+        {
+          "name": "reviewer",
+          "signer": true,
+          "relations": [
+            "grant"
+          ]
+        },
+        {
+          "name": "grant",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "grant.sponsor",
+                "account": "Grant"
+              },
+              {
+                "kind": "account",
+                "path": "grant.grant_id",
+                "account": "Grant"
+              }
+            ]
+          }
+        },
+        {
+          "name": "sponsor",
+          "writable": true,
+          "relations": [
+            "grant"
+          ]
+        },
+        {
+          "name": "student",
+          "relations": [
+            "grant"
+          ]
+        },
+        {
+          "name": "mint",
+          "relations": [
+            "grant"
+          ]
+        },
+        {
+          "name": "vault",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  118,
+                  97,
+                  117,
+                  108,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "grant"
+              }
+            ]
+          }
+        },
+        {
+          "name": "student_token",
+          "writable": true
+        },
+        {
+          "name": "sponsor_token",
+          "writable": true
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+        }
+      ],
+      "args": [
+        {
+          "name": "approved",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "submit_claim",
+      "discriminator": [
+        163,
+        108,
+        111,
+        46,
+        220,
+        82,
+        77,
+        212
+      ],
+      "accounts": [
+        {
+          "name": "student",
+          "signer": true,
+          "relations": [
+            "grant"
+          ]
+        },
+        {
+          "name": "grant",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  103,
+                  114,
+                  97,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "grant.sponsor",
+                "account": "Grant"
+              },
+              {
+                "kind": "account",
+                "path": "grant.grant_id",
+                "account": "Grant"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "receipt_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Grant",
+      "discriminator": [
+        161,
+        166,
+        11,
+        205,
+        204,
+        135,
+        205,
+        54
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "ClaimSubmitted",
+      "discriminator": [
+        95,
+        1,
+        120,
+        227,
+        177,
+        240,
+        174,
+        52
+      ]
+    },
+    {
+      "name": "GrantFunded",
+      "discriminator": [
+        82,
+        66,
+        222,
+        208,
+        167,
+        206,
+        149,
+        118
+      ]
+    },
+    {
+      "name": "GrantSettled",
+      "discriminator": [
+        168,
+        126,
+        166,
+        167,
+        121,
+        196,
+        113,
+        165
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "InvalidAmount",
+      "msg": "Amount must be positive."
+    },
+    {
+      "code": 6001,
+      "name": "InvalidDeadlines",
+      "msg": "Claim and review deadlines must be ordered, future dates within 90 days."
+    },
+    {
+      "code": 6002,
+      "name": "InvalidState",
+      "msg": "This instruction is unavailable in the current grant state."
+    },
+    {
+      "code": 6003,
+      "name": "Unauthorized",
+      "msg": "Only the designated wallet may take this action."
+    },
+    {
+      "code": 6004,
+      "name": "ClaimWindowClosed",
+      "msg": "The claim deadline has passed."
+    },
+    {
+      "code": 6005,
+      "name": "ReviewWindowClosed",
+      "msg": "The review deadline has passed; refund is now available."
+    },
+    {
+      "code": 6006,
+      "name": "ApprovalExceedsLimit",
+      "msg": "Approval exceeds the claim or the reserved budget."
+    },
+    {
+      "code": 6007,
+      "name": "RefundTooEarly",
+      "msg": "The review deadline has not passed."
+    },
+    {
+      "code": 6008,
+      "name": "MissingEvidence",
+      "msg": "A nonzero evidence commitment is required."
+    },
+    {
+      "code": 6009,
+      "name": "UnsupportedMint",
+      "msg": "Unsupported mint or token precision."
+    },
+    {
+      "code": 6010,
+      "name": "DistinctRolesRequired",
+      "msg": "Sponsor, student and reviewer must be three distinct wallets."
+    },
+    {
+      "code": 6011,
+      "name": "InsufficientVault",
+      "msg": "The vault cannot cover this payment."
+    },
+    {
+      "code": 6012,
+      "name": "Arithmetic",
+      "msg": "Arithmetic overflow."
+    }
+  ],
+  "types": [
+    {
+      "name": "ClaimSubmitted",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "grant",
+            "type": "pubkey"
+          },
+          {
+            "name": "student",
+            "type": "pubkey"
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "receipt_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Grant",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "grant_id",
+            "type": "u64"
+          },
+          {
+            "name": "sponsor",
+            "type": "pubkey"
+          },
+          {
+            "name": "student",
+            "type": "pubkey"
+          },
+          {
+            "name": "reviewer",
+            "type": "pubkey"
+          },
+          {
+            "name": "mint",
+            "type": "pubkey"
+          },
+          {
+            "name": "cap",
+            "type": "u64"
+          },
+          {
+            "name": "claimed",
+            "type": "u64"
+          },
+          {
+            "name": "approved",
+            "type": "u64"
+          },
+          {
+            "name": "refunded",
+            "type": "u64"
+          },
+          {
+            "name": "claim_deadline",
+            "type": "i64"
+          },
+          {
+            "name": "review_deadline",
+            "type": "i64"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          },
+          {
+            "name": "submitted_at",
+            "type": "i64"
+          },
+          {
+            "name": "settled_at",
+            "type": "i64"
+          },
+          {
+            "name": "event_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "receipt_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "status",
+            "type": {
+              "defined": {
+                "name": "GrantStatus"
+              }
+            }
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          },
+          {
+            "name": "vault_bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrantFunded",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "grant",
+            "type": "pubkey"
+          },
+          {
+            "name": "sponsor",
+            "type": "pubkey"
+          },
+          {
+            "name": "student",
+            "type": "pubkey"
+          },
+          {
+            "name": "cap",
+            "type": "u64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrantSettled",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "grant",
+            "type": "pubkey"
+          },
+          {
+            "name": "approved",
+            "type": "u64"
+          },
+          {
+            "name": "refunded",
+            "type": "u64"
+          },
+          {
+            "name": "status",
+            "type": {
+              "defined": {
+                "name": "GrantStatus"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrantStatus",
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Funded"
+          },
+          {
+            "name": "Submitted"
+          },
+          {
+            "name": "Paid"
+          },
+          {
+            "name": "Rejected"
+          },
+          {
+            "name": "Expired"
+          }
+        ]
+      }
+    }
+  ]
+}

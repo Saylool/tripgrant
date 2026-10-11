@@ -1,0 +1,2 @@
+# Research CSV cells may contain intentional source whitespace and CRLF records.
+research/*.csv -whitespace

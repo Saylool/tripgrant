@@ -1,0 +1,10 @@
+.git
+.local
+.tooling
+.env
+.env.*
+node_modules
+target
+research
+test-results
+*.log

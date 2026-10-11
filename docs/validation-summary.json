@@ -1,0 +1,57 @@
+{
+  "verifiedAt": "2026-10-11T13:05:51.139Z",
+  "network": "localnet",
+  "programId": "Ea1JSMwEmnHGG4BUWnzrEFVhkNrtif3919GbdnuaLhd3",
+  "automatedChecks": {
+    "unitAndSecurity": 26,
+    "programIntegration": 17,
+    "httpIntegration": 4,
+    "canonicalUsdcBinary": 1,
+    "total": 48
+  },
+  "runtimeAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 5,
+    "high": 0,
+    "critical": 0,
+    "total": 5
+  },
+  "build": {
+    "programId": "Ea1JSMwEmnHGG4BUWnzrEFVhkNrtif3919GbdnuaLhd3",
+    "network": "localnet",
+    "binarySha256": "c0a0603081fbcce995f7068bdfbfdd07259fb527d25e5cba2c6006033ef43b9d",
+    "sourceSha256": "026976023a714f9502ab90dfec4c7942e4d8a62e7c24eaba7f5568cb174d0ac7",
+    "anchorVersion": "1.2.1",
+    "solanaVersion": "4.3.0"
+  },
+  "devnetBuild": {
+    "programId": "Ea1JSMwEmnHGG4BUWnzrEFVhkNrtif3919GbdnuaLhd3",
+    "network": "devnet",
+    "binarySha256": "ac56e78409cefddf86cbac5ad48bf42dc0661aee5785078b8dfd4bafe1a31f86",
+    "sourceSha256": "026976023a714f9502ab90dfec4c7942e4d8a62e7c24eaba7f5568cb174d0ac7",
+    "anchorVersion": "1.2.1",
+    "solanaVersion": "4.3.0"
+  },
+  "browserFlow": {
+    "event": "Student Builders Summit",
+    "grant": "ExHrZuhXhsNh9eGzivKq7gjmVSyXfVCCrMn88U8REftf",
+    "cap": "100.000000 TEST",
+    "claimed": "72.000000 TEST",
+    "approved": "72.000000 TEST",
+    "refunded": "28.000000 TEST",
+    "status": "paid",
+    "vaultClosed": true,
+    "receiptSha256": "552fe23734df5881e46760bbf081c69d18b8e19532fc81eb7733d563147447b6",
+    "signature": "PiUcyEBUpac6KE7WszseHGZ1FBNCZEhcQC8qCLZkosKiSzbuYkyKjov3acFuWn7zpApCPoXoVgWNm2asoXcx5Lf",
+    "slot": 7495,
+    "feeLamports": 5000,
+    "transactionError": null,
+    "viewportChecks": {
+      "desktop": "1280x720",
+      "mobile": "390x844",
+      "mobileDocumentWidth": 390
+    }
+  },
+  "publicDevnetDeployed": false
+}

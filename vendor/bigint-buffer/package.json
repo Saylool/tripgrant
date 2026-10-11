@@ -1,0 +1,8 @@
+{
+  "name": "bigint-buffer",
+  "version": "2.0.0-tripgrant.0",
+  "private": true,
+  "description": "TripGrant's small pure JavaScript compatibility replacement; no native converter.",
+  "main": "index.cjs",
+  "types": "index.d.ts"
+}

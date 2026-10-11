@@ -1,0 +1,61 @@
+{
+  "name": "tripgrant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reserved travel grants with atomic reimbursement and sponsor refunds on Solana.",
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "start": "NODE_ENV=production tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --config vitest.config.ts",
+    "format": "prettier --write app server shared scripts tests vendor *.json *.ts docs/*.md README.md",
+    "test:chain": "tsx --test tests/chain.test.ts",
+    "setup": "tsx scripts/setup.ts",
+    "chain:build": "bash scripts/build-program.sh",
+    "chain:start": "bash scripts/start-validator.sh",
+    "chain:deploy": "bash scripts/deploy-program.sh",
+    "demo:seed": "tsx scripts/seed.ts",
+    "verify": "npm run typecheck && npm test && npm run test:chain && npm run test:http && npm run build",
+    "test:http": "tsx --test tests/http.test.ts",
+    "demo": "tsx scripts/demo.ts",
+    "tools:install": "bash scripts/install-toolchain.sh",
+    "test:usdc": "tsx --test scripts/test-usdc-build.ts"
+  },
+  "dependencies": {
+    "@anchor-lang/core": "1.2.1",
+    "@solana/spl-token": "0.4.15",
+    "@solana/web3.js": "1.99.0",
+    "@solana/wallet-adapter-phantom": "0.9.30",
+    "bs58": "6.0.0",
+    "express": "5.3.0",
+    "lucide-react": "1.55.0",
+    "multer": "2.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tweetnacl": "1.0.3",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/multer": "2.3.0",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.3",
+    "prettier": "3.9.10"
+  },
+  "engines": {
+    "node": ">=26.0.0"
+  },
+  "overrides": {
+    "bigint-buffer": "file:./vendor/bigint-buffer",
+    "toml": "5.0.0",
+    "uuid": "11.1.1"
+  }
+}

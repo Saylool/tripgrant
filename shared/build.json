@@ -1,0 +1,8 @@
+{
+  "programId": "Ea1JSMwEmnHGG4BUWnzrEFVhkNrtif3919GbdnuaLhd3",
+  "network": "localnet",
+  "binarySha256": "c0a0603081fbcce995f7068bdfbfdd07259fb527d25e5cba2c6006033ef43b9d",
+  "sourceSha256": "026976023a714f9502ab90dfec4c7942e4d8a62e7c24eaba7f5568cb174d0ac7",
+  "anchorVersion": "1.2.1",
+  "solanaVersion": "4.3.0"
+}

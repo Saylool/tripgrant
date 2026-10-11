@@ -1,0 +1,16 @@
+node_modules/
+dist/
+target/
+.tooling/
+.local/
+.env
+.env.*
+!.env.example
+.DS_Store
+test-results/
+research/*
+!research/onceki_projeler_karsilastirma.csv
+!research/onceki_yarismalar_baglanti_envanteri.csv
+!research/karar_notlari.md
+!research/journal.md
+*.log
