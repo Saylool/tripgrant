@@ -8,7 +8,7 @@ This repository contains a working Anchor program, an English React application,
 
 **Colosseum project draft:** [TripGrant](https://colosseum.com/arena/projects/tripgrant). Creating the project draft is separate from completing the final hackathon submission.
 
-The prepared [pitch](https://saylool.github.io/tripgrant/videos/pitch.mp4) is 1:45 and the [demo walkthrough](https://saylool.github.io/tripgrant/videos/demo.mp4) is 2:13. They use synthetic English narration over actual screen captures. Colosseum requires final video links on YouTube, Loom or Vimeo, and the team should review the founder introduction and live-product demonstration requirements before submitting. Captions and provenance are in `showcase/videos`.
+The English [pitch](https://youtu.be/XhlKwcJ8quw) is 1:46 on YouTube and the [demo walkthrough](https://youtu.be/0INAL_Qi9b4) is 2:13. Both are published as unlisted videos with English captions. They use synthetic English narration over actual screen captures; the demo is a screen-by-screen walkthrough. Original MP4 files, captions and provenance are in `showcase/videos`.
 
 ## Run the working demo
 

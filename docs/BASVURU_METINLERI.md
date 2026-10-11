@@ -1,6 +1,6 @@
 # TripGrant — application text drafts
 
-Prepared 11 October 2026. These describe the current prototype. Update deployment status and links after they are verified. Applicant-provided university: Piri Reis University; GitHub account: Saylool. Personal answers still need the applicant's input.
+Updated 11 October 2026. These describe the current prototype and verified publication links. Applicant-provided university: Piri Reis University; GitHub account: Saylool. The founder profile and project/media sections are saved in Colosseum; the final survey and competition submissions are not yet complete.
 
 ## Project name
 
@@ -38,19 +38,23 @@ The initial revenue hypothesis is a subscription for organizers and sponsors man
 
 This TripGrant implementation was created in this workspace on 11 October 2026, inside the hackathon window, using existing open-source libraries and AI coding assistance. The applicant should confirm any additional prior work or human contributions before submitting.
 
-## Links to fill after publication
+## Verified application links
 
-| Field                  | Current state                                                                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| GitHub repository      | https://github.com/Saylool/tripgrant                                                                                           |
-| Public project website | https://saylool.github.io/tripgrant/ — screenshots, videos and evidence; full escrow app runs from source                      |
-| Project X link         | Applicant to provide                                                                                                           |
-| English pitch video    | Prepared 1:45 video at https://saylool.github.io/tripgrant/videos/pitch.mp4; final YouTube/Loom/Vimeo link pending             |
-| English demo video     | Prepared 2:13 screen walkthrough at https://saylool.github.io/tripgrant/videos/demo.mp4; final YouTube/Loom/Vimeo link pending |
-| Colosseum project link | https://colosseum.com/arena/projects/tripgrant — draft created, final submission pending                                       |
+| Field                  | Current state                                                                                             |
+| ---------------------- | --------------------------------------------------------------------------------------------------------- |
+| GitHub repository      | https://github.com/Saylool/tripgrant                                                                      |
+| Public project website | https://saylool.github.io/tripgrant/ — screenshots, videos and evidence; full escrow app runs from source |
+| Applicant X link       | https://x.com/LoolSay — applicant account; no separate project account has been created                   |
+| English pitch video    | https://youtu.be/XhlKwcJ8quw — unlisted, English captions, 1:46 on YouTube                                |
+| English demo video     | https://youtu.be/0INAL_Qi9b4 — unlisted, English captions, 2:13 screen walkthrough                        |
+| Colosseum project link | https://colosseum.com/arena/projects/tripgrant — draft created, final submission pending                  |
 
 Only answer the Earn question about an official Colosseum submission with **Yes** after the main submission has actually completed. Use the same project name and verified links in all three submissions.
 
-## Applicant details still needed
+## Submission status and remaining applicant details
 
-Full name, Colosseum username, Telegram contact, X link, current student verification as requested by the organizer, and truthful answers about legal entity, investment, fundraising and any live token. No placeholder should be submitted as a real answer. Do not invent founder experience, customer interviews, partnerships or traction.
+The applicant's name, Colosseum profile, Telegram contact, X account and prior public GitHub work have been entered and saved. The applicant confirmed this is their first Solana competition. Department and study year have not been provided; do not invent them. Current student verification may still be requested by the organizer.
+
+Colosseum's project review reports **Ready to submit**. The final survey is being prepared. Both Earn forms contain the verified project and video links, but remain unsent. Their official-Colosseum-submission answer stays blank until a successful main submission is verified.
+
+The Superteam Türkiye intake draft is also unsent. The dedicated hackathon Telegram group join request is awaiting administrator approval; membership must be verified before checking the required joined-group answer. The Luma calendar registration step is pending. No staff Telegram group has been created. Do not invent founder experience, customer interviews, partnerships or traction.
